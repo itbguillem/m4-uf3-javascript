@@ -8,12 +8,18 @@
     </head>
     
     <body style="height:100%; margin:0; padding:0; justify-content:center; align-items:center">
-        <header>
-            <h1>Mi Encabezado</h1>
-          </header>
-        <main>
-            <p>Contenido principal de la página.</p>
-            <span id="clocktext" style="font-kerning:none"></span>
+        <header class="header_normal" id="header">
+            <h1>Hola</h1>
+            <script type="text/javascript" src="changecolor.js"></script>
+            <button onclick="DarkMode()">Toggle DarkMode</button>
+            <button onclick="DraculaMode()">Toggle DraculaMode</button>
+            
+        </header>
+
+        <main class="main_normal" id="main">
+            <div>
+                <span id="clocktext" style="font-kerning:none"></span>
+            </div>
             <script type="text/javascript" src="index.js"></script>
         </main>
     </body>

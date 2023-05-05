@@ -1,22 +1,42 @@
 header {
-    background-color: cyan;
-    color: black;
+    background-color: rgb(146, 236, 236);
+    color: rgb(27, 78, 99);
     height: 50px;
     padding: 10px;
     width: 100%;
     text-align: center;
     vertical-align: auto;
 }
+
 main {
     width: 80%;
     margin: auto;
     padding: 20px;
+    background: #ffffff;
+    color: #000000;
 }
+
+.header_dark {
+    background-color:darkblue;
+    color: #c3e0de;
+}
+.header_dracula {
+    background-color:#29152c;
+    color: #996ab4;
+}
+
+.main_dark {
+    background: #000;
+    color: #fff;
+}
+.main_dracula {
+    background: #551a1a;
+    color: #89649e;
+}
+
 html {
-    background: #000000;
     font-family: sans-serif;
     font-weight: bold;
-    color: #FFFFFF;
 }
 #clocktext {
     color: orange
