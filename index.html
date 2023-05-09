@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html style="height:100%; margin:0; padding:0">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Clock</title>
-        
-        <link rel="stylesheet" href="index.css">
-    </head>
-    
-    <body style="height:100%; margin:0; padding:0; justify-content:center; align-items:center">
-        <header class="header_normal" id="header">
-            <h1>Hola</h1>
-            <script type="text/javascript" src="changecolor.js"></script>
-            <button onclick="DarkMode()">Toggle DarkMode</button>
-            <button onclick="DraculaMode()">Toggle DraculaMode</button>
-            
-        </header>
+<html lang="ca">
 
-        <main class="main_normal" id="main">
-            <div>
-                <span id="clocktext" style="font-kerning:none"></span>
-            </div>
-            <script type="text/javascript" src="index.js"></script>
-        </main>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Eines per a l'aula</title>
+</head>
+
+<body>
+  <h1>Eines per a l'aula</h1>
+
+  <section>
+    <h2>Ruleta de noms</h2>
+    <button id="spinButton">Girar la ruleta</button>
+    <p id="selectedName"></p>
+  </section>
+
+  <section>
+    <h2>Rellotge Temporitzador</h2>
+    <div id="clockContainer">
+      <div id="clock">
+        <div id="hourHand"></div>
+        <div id="minuteHand"></div>
+        <div id="secondHand"></div>
+      </div>
+      <div id="timer">
+        <input type="text" id="timerInput" placeholder="HH:MM:SS">
+        <button id="startButton">Iniciar</button>
+      </div>
+    </div>
+  </section>
+
+  <audio id="alarmSound" src="alarm.mp3"></audio>
+
+  <script src="spin.js"></script>
+  <script src="timer.js"></script>
+</body>
+
 </html>
