@@ -1,0 +1,106 @@
+body {
+background-color: white;
+font-family: Arial, sans-serif;
+transition: background-color 0.3s ease;
+}
+
+.dark-mode body {
+background-color: #222 !important;
+color: #6b1e5b;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: violet;
+color: white;
+}
+
+h1 {
+margin: 0;
+}
+
+button {
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+background-color: #555;
+color: violet;
+cursor: pointer;
+}
+
+.container {
+text-align: center;
+margin-top: 200px;
+}
+
+aside {
+width: 200px;
+background-color: violet;
+color: white;
+padding: 20px;
+margin-top: -190px;
+height: calc(100vh - 145px);
+}
+
+.options {
+display: flex;
+flex-direction: column;
+}
+
+.button {
+display: block;
+padding: 15px 20px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+background-color: #555;
+color: violet;
+cursor: pointer;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.button.active {
+background-color: violet;
+color: white;
+pointer-events: none;
+}
+
+.button:hover:not(.active) {
+background-color: darkviolet;
+}
+
+.dark-mode header {
+background-color: #333;
+color: #6b1e5b;
+}
+
+.dark-mode button {
+background-color: white;
+color: #6b1e5b;
+}
+
+.dark-mode aside {
+background-color: #333;
+}
+
+.dark-mode .button {
+background-color: #6b1e5b;
+color: #333;
+}
+
+.dark-mode .button.active {
+background-color: #333;
+color: #6b1e5b;
+}
+
+.dark-mode .button:hover:not(.active) {
+background-color: #555;
+}
+
