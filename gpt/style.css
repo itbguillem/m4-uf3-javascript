@@ -37,8 +37,9 @@ color: green;
 }
 
 #container {
-display: flex;
-}
+    display: flex;
+    height: 100vh;
+  }
 
 aside {
 transition: background-color 0.5s ease;
@@ -164,3 +165,56 @@ background-color: #171717;
 color: rgb(120, 153, 125);
 }
 
+
+
+.clock {
+    font-family: "Digital", Arial, sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hora-exacta {
+    font-family: "Digital", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+
+/* Dark mode styles */
+.dark-mode .clock {
+color: turquoise;
+}
+
+.dark-mode .hora-exacta {
+color: lightgreen;
+}
+
+
+
+
+.digital-clock {
+font-size: 48px;
+text-align: center;
+}
+
+#timer-container {
+margin-top: 20px;
+text-align: center;
+}
+
+#timer-display {
+margin-top: 20px;
+font-size: 24px;
+text-align: center;
+}
+
+#sound {
+display: none;
+}
+  
