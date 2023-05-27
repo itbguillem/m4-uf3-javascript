@@ -1,0 +1,368 @@
+html {
+font-family: Arial, sans-serif;
+transition: background-color 0.3s ease;
+background-color: white;
+}
+
+
+/*Header*/
+header {
+transition: background-color 0.5s ease;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: greenyellow;
+color: black;
+font-weight: bolder;
+}
+h1 {
+margin: 0;
+}  
+
+
+/*Boton Modo Oscuro*/
+#darkModeButton {
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+background-color: black;
+color: greenyellow;
+cursor: pointer;
+margin-bottom: 10px;
+}
+#darkModeButton:hover {
+background-color: white;
+color: green;
+}
+
+
+/*Botones Index*/
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.button {
+transition: background-color 0.3s ease;
+display: inline-block;
+width: 49.5%;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+background-color: #91d629;
+color: #333;
+cursor: pointer;
+text-decoration: none;
+font-size: 100px;
+font-weight: bolder;
+margin-left: 6px;
+margin-top: 4px;
+padding-top: 20%;
+padding-bottom: 20%;
+text-align: center;
+}
+
+
+/*Aside & Main CO-Living*/
+.einacontainer {
+display: flex;
+}
+
+
+/*Aside Eines*/
+aside {
+transition: background-color 0.5s ease;
+width: 200px;
+background-color: greenyellow;
+color: white;
+padding: 20px;
+height: calc(100vh - 150px);
+}
+.options {
+display: flex;
+flex-direction: column;
+}
+.button2 {
+transition: background-color 0.3s ease;
+display: block;
+padding: 15px 20px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+background-color: #95dd28;
+color: black;
+cursor: pointer;
+text-decoration: none;
+margin-bottom: 10px;
+}
+.button2.active {
+transition: background-color 0.3s ease;
+background-color: green;
+color: black;
+}
+.button2:hover {
+background-color: green;
+}
+
+
+/*Main Eines*/
+main {
+transition: background-color 0.5s ease;
+flex-grow: 1;
+background-color: #82c988cb;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mainruleta {
+display: blocksss;
+flex-direction: column;
+align-items: center;
+position: relative;
+}
+
+
+/*Ruleta*/
+.buttongirar {
+padding: 15px 30px;
+font-size: 24px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+background-color: #95dd28;
+color: black;
+cursor: pointer;
+text-decoration: none;
+margin-bottom: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s ease, transform 0.3s ease;
+position: absolute;
+top: 170px;
+}
+.buttongirar:hover {
+background-color: #7dc81e;
+transform: scale(1.05);
+}
+.buttongirar:active {
+background-color: #6ea21c;
+transform: scale(0.95);
+}
+.ruleton {
+margin-top: 40px;
+}
+
+
+
+
+/*Dark Mode*/
+
+.dark-mode html {
+    background-color: #171717;
+}
+
+/*Header - Dark*/
+.dark-mode header {
+background-color: #383838;
+color: white;
+}
+
+
+/*Boton Modo Oscuro - Dark*/
+.dark-mode #darkModeButton {
+background-color: white;
+color: green;
+}
+.dark-mode #darkModeButton:hover {
+background-color: black;
+color: greenyellow
+}
+
+
+/*Botones Index - Dark*/
+.dark-mode .button {
+background-color: #666;
+color: #23b423a6;
+}
+.button:hover:not(.active) {
+background-color: green;
+}
+.dark-mode .button.active {
+background-color: #333;
+color: #8b26778c;
+}
+.dark-mode .button:hover:not(.active) {
+background-color: #444;
+}
+
+
+/*Aside Eines*/
+.dark-mode .button2{
+background-color: #666;
+color: greenyellow;
+}
+.dark-mode .button2:hover{
+background-color: #444;
+color: rgb(221, 253, 172);
+}
+.dark-mode .button2.active{
+background-color: #444;
+color: greenyellow;
+}
+.dark-mode aside {
+background-color: #383838;
+}
+
+
+/*Main Eines*/
+.dark-mode main {
+background-color: #171717;
+color: rgb(120, 153, 125);
+}
+
+/*Ruleta*/
+.dark-mode .buttongirar {
+background-color: #555;
+color: greenyellow;
+}
+.dark-mode .buttongirar:hover {
+background-color: #444;
+}
+.dark-mode .buttongirar:active {
+background-color: #333;
+transform: scale(0.95);
+}
+
+
+
+
+
+/*Reloj*/
+.wrappers,
+.wrapper,
+.content {
+width: 100%;
+height: 55%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.wrapper {
+margin: 20px;
+width: 75%;
+padding: 15px 15px 25px;
+background-color: white;
+border-radius: 20px;
+flex-direction: column;
+}
+
+.wrapper h1 {
+font-size: 45px;
+font-weight: 700;
+margin: 30px;
+}
+
+.wrapper .content {
+width: 100%;
+justify-content: space-between;
+}
+
+.content .column {
+padding: 0 10px;
+border-radius: 5px;
+border: 2px solid #000;
+width: calc(100% / 3 - 5px);
+margin-right: 2px;
+}
+
+.content .column2 {
+padding: 0 10px;
+border-radius: 5px;
+border: 2px solid #000;
+width: calc(100% / 2 - 5px);
+margin-right: 2px;
+}
+
+
+.column select {
+width: 100%;
+height: 50px;
+border: none;
+outline: none;
+background: none;
+font-size: 19px;
+}
+
+.column2 select {
+width: 100%;
+height: 50px;
+border: none;
+outline: none;
+background: none;
+font-size: 19px;
+}
+
+#sound-select {
+width: 100%;
+height: 50px;
+border: none;
+outline: none;
+background: none;
+font-size: 19px;
+}
+
+
+.wrapper .buttonreloj {
+width: 100%;
+color: #82c988cb;
+font-weight: 800px;
+cursor: pointer;
+font-size: 20px;
+padding: 17px 0;
+margin-top: 20px;
+border-radius: 5px;
+background: #ffffff;
+border-width: 4px;
+border-color: #333;
+}
+
+#time-clock {
+    display: block;
+    position: absolute;
+    top: 180px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.dark-mode .wrapper {
+background-color: #333;
+color: white;
+}
+.dark-mode h1 {
+color: greenyellow;
+}
+.dark-mode .column {
+border-color: #fff;
+}
+.dark-mode .content.disable .column {
+opacity: 0.4;
+}
+.dark-mode .column2 {
+border-color: #fff;
+}
+.dark-mode .content.disable .column2 {
+opacity: 0.4;
+}
+.dark-mode select {
+color: #fff;
+}
+.dark-mode .buttonreloj {
+color: #a3f545;
+background: #0c0c0c;
+}
